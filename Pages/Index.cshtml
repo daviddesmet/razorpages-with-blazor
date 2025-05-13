@@ -1,0 +1,13 @@
+@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model HybridApp.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<h1>Hello from Razor Page</h1>
+
+<component type="typeof(RazorPagesWithBlazor.Components.HelloComponent)" render-mode="Static" />
+
+<component type="typeof(RazorPagesWithBlazor.Components.Counter)" render-mode="ServerPrerendered" />

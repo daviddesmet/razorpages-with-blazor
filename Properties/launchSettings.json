@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "HybridApp": {
+      "commandName": "Project",
+      "environmentVariables": {
+        
+      },
+      "applicationUrl": "https://localhost:58415;http://localhost:58416"
+    }
+  }
+}
