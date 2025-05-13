@@ -1,5 +1,4 @@
 @page
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @model HybridApp.Pages.IndexModel
 @{
     ViewData["Title"] = "Home Page";
@@ -11,3 +10,6 @@
 <component type="typeof(RazorPagesWithBlazor.Components.HelloComponent)" render-mode="Static" />
 
 <component type="typeof(RazorPagesWithBlazor.Components.Counter)" render-mode="ServerPrerendered" />
+
+<div hx-get="/weather" hx-trigger="load" hx-swap="innerHTML"></div>
+
